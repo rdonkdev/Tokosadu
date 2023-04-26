@@ -1,2 +1,8 @@
 # Tokosadu
-  "Tocossado - Sistema de Pedido de Comida Online" contém todos os arquivos e histórico de versões do código-fonte desenvolvido durante o projeto. Ele inclui o código do sistema, documentação, apresentações e outros arquivos relevantes.
+  "Tocossado - Sistema de Pedido de Comida Online" contém todo o código do sistema e outros arquivos relevantes.
+
+  Follow "stackdevz in instagram for more projects!
+
+  Developed by Sheldon Tembue
+
+  Recommended PHP Version 5.6, 7.4
