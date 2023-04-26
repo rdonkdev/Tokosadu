@@ -1,7 +1,7 @@
 # Tokosadu
   "Tocossado - Sistema de Pedido de Comida Online" contém todo o código do sistema e outros arquivos relevantes.
 
-  Follow "stackdevz in instagram for more projects!
+  Follow @stackdevz in instagram for more projects!
 
   Developed by Sheldon Tembue
 
