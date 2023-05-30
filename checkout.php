@@ -73,7 +73,7 @@ else{
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurantes <span class="sr-only"></span></a> </li>
                             
 							<?php
 						if(empty($_SESSION["user_id"]))
@@ -85,8 +85,8 @@ else{
 							{
 									
 									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
+										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Meus pedidos</a> </li>';
+									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Sair</a> </li>';
 							}
 
 						?>
@@ -101,9 +101,9 @@ else{
                 <div class="container">
                     <ul class="row links">
                       
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item "><span>2</span><a href="#">Pick Your favorite food</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item active" ><span>3</span><a href="checkout.php">Order and Pay</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Escolha o Restaurante</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item "><span>2</span><a href="#">Escolha sua comida favorita</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item active" ><span>3</span><a href="checkout.php">Encomende e pague</a></li>
                     </ul>
                 </div>
             </div>
@@ -130,7 +130,7 @@ else{
                                 <div class="col-sm-12">
                                     <div class="cart-totals margin-b-20">
                                         <div class="cart-totals-title">
-                                            <h4>Cart Summary</h4> </div>
+                                            <h4>Pedidos no carrinho</h4> </div>
                                         <div class="cart-totals-fields">
 										
                                             <table class="table">
@@ -139,12 +139,12 @@ else{
 												 
 											   
                                                     <tr>
-                                                        <td>Cart Subtotal</td>
-                                                        <td> <?php echo "$".$item_total; ?></td>
+                                                        <td>Subtotal</td>
+                                                        <td> <?php echo "MZN".$item_total; ?></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Delivery Charges</td>
-                                                        <td>Free</td>
+                                                        <td>Taxa de entrega</td>
+                                                        <td>Grátis</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-color"><strong>Total</strong></td>
@@ -162,15 +162,15 @@ else{
                                         <ul class=" list-unstyled">
                                             <li>
                                                 <label class="custom-control custom-radio  m-b-20">
-                                                    <input name="mod" id="radioStacked1" checked value="COD" type="radio" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Cash on Delivery</span>
+                                                    <input name="mod" id="radioStacked1" checked value="COD" type="radio" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Pagamento na entrega</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="custom-control custom-radio  m-b-10">
-                                                    <input name="mod"  type="radio" value="paypal" disabled class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Paypal <img src="images/paypal.jpg" alt="" width="90"></span> </label>
+                                                    <input name="mod"  type="radio" value="Carteira Movel" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Carteira Movel <img src="images/paypal.jpg" alt="" width="90"></span> </label>
                                             </li>
                                         </ul>
-                                        <p class="text-xs-center"> <input type="submit" onclick="return confirm('Do you want to confirm the order?');" name="submit"  class="btn btn-success btn-block" value="Order Now"> </p>
+                                        <p class="text-xs-center"> <input type="submit" onclick="return confirm('Você quer confirma o pedido?');" name="submit"  class="btn btn-success btn-block" value="Sim"> </p>
                                     </div>
 									</form>
                                 </div>

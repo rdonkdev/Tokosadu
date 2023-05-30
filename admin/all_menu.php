@@ -13,7 +13,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>All Menu</title>
+    <title>Todos Menus</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -54,11 +54,11 @@ session_start();
                             <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn">
                                 <ul>
                                     <li>
-                                        <div class="drop-title">Notifications</div>
+                                        <div class="drop-title">Notificação</div>
                                     </li>
                                     
                                     <li>
-                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Ver todas notificações</strong> <i class="fa fa-angle-right"></i> </a>
                                     </li>
                                 </ul>
                             </div>
@@ -68,7 +68,7 @@ session_start();
                             <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/bookingSystem/user-icn.png" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
-                                    <li><a href="logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
+                                    <li><a href="logout.php"><i class="fa fa-power-off"></i> Sair</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -85,26 +85,26 @@ session_start();
                    <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+                        <li> <a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Painel</span></a></li>
                         <li class="nav-label">Log</li>
-                        <li> <a href="all_users.php">  <span><i class="fa fa-user f-s-20 "></i></span><span>Users</span></a></li>
+                        <li> <a href="all_users.php">  <span><i class="fa fa-user f-s-20 "></i></span><span>Usuarios</span></a></li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurant</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_restaurant.php">All Restaurants</a></li>
-								<li><a href="add_category.php">Add Category</a></li>
-                                <li><a href="add_restaurant.php">Add Restaurant</a></li>
+								<li><a href="all_restaurant.php">Todos Restaurantes</a></li>
+								<li><a href="add_category.php">Adicionar Categoria</a></li>
+                                <li><a href="add_restaurant.php">Adicionar Restaurante</a></li>
                                 
                             </ul>
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">Todos menus</a></li>
+								<li><a href="add_menu.php">Adicionar Menu</a></li>
                               
                                 
                             </ul>
                         </li>
-						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Orders</span></a></li>
+						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Pedidos</span></a></li>
                          
                     </ul>
                 </nav>
@@ -131,7 +131,7 @@ session_start();
                              <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">All Menu</h4>
+                                <h4 class="m-b-0 text-white">Todo Menu</h4>
                             </div>
                                 
 								
@@ -139,11 +139,11 @@ session_start();
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead class="thead-dark">
                                             <tr>
-											 <th>Restaurant</th>
-                                                <th>Dish</th>
-                                                <th>Description</th>
-                                                <th>Price</th>
-                                                <th>Image</th>
+											 <th>Restaurante</th>
+                                                <th>Pratos</th>
+                                                <th>Descrição</th>
+                                                <th>Preço</th>
+                                                <th>Imagem</th>
                                                <th>Action</th>	  
                                             </tr>
                                         </thead>

@@ -113,7 +113,7 @@ if(isset($_POST['submit']))
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="images/manager.png" sizes="16x16" href="images/favicon.png">
-    <title>Add Menu</title>
+    <title>Adicionar Prato</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">

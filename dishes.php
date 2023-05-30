@@ -34,20 +34,20 @@ include_once 'product-action.php';
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                        <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurantes <span class="sr-only"></span></a> </li>
                             
 							<?php
 						if(empty($_SESSION["user_id"]))
 							{
 								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">Register</a> </li>';
+							  <li class="nav-item"><a href="registration.php" class="nav-link active">Registrar</a> </li>';
 							}
 						else
 							{
 									
 									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
+										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Meus Pedidos</a> </li>';
+									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Sair</a> </li>';
 							}
 
 						?>
@@ -62,9 +62,9 @@ include_once 'product-action.php';
                 <div class="container">
                     <ul class="row links">
                       
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item active"><span>2</span><a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>">Pick Your favorite food</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item"><span>3</span><a href="#">Order and Pay</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Escolha o Restaurante</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item active"><span>2</span><a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>">Escolha a sua comida favorita</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>3</span><a href="#">Encomende e pague</a></li>
                         
                     </ul>
                 </div>
@@ -102,7 +102,7 @@ include_once 'product-action.php';
                          <div class="widget widget-cart">
                                 <div class="widget-heading">
                                     <h3 class="widget-title text-dark">
-                                 Your Cart
+                                 Carrinho
                               </h3>
 							  				  
 							  
@@ -151,19 +151,19 @@ $item_total += ($item["price"]*$item["quantity"]);
                                     <div class="price-wrap text-xs-center">
                                         <p>TOTAL</p>
                                         <h3 class="value"><strong><?php echo "$".$item_total; ?></strong></h3>
-                                        <p>Free Delivery!</p>
+                                        <p>Entrega grátis!</p>
                                         <?php
                                         if($item_total==0){
                                         ?>
 
                                         
-                                        <a href="checkout.php?res_id=<?php echo $_GET['res_id'];?>&action=check"  class="btn btn-danger btn-lg disabled">Checkout</a>
+                                        <a href="checkout.php?res_id=<?php echo $_GET['res_id'];?>&action=check"  class="btn btn-danger btn-lg disabled">Confirmar</a>
 
                                         <?php
                                         }
                                         else{   
                                         ?>
-                                        <a href="checkout.php?res_id=<?php echo $_GET['res_id'];?>&action=check"  class="btn btn-success btn-lg active">Checkout</a>
+                                        <a href="checkout.php?res_id=<?php echo $_GET['res_id'];?>&action=check"  class="btn btn-success btn-lg active">Confirmar</a>
                                         <?php   
                                         }
                                         ?>
@@ -221,7 +221,7 @@ $item_total += ($item["price"]*$item["quantity"]);
                                         <div class="col-xs-12 col-sm-12 col-lg-3 pull-right item-cart-info"> 
 										<span class="price pull-left" >$<?php echo $product['price']; ?></span>
 										  <input class="b-r-0" type="text" name="quantity"  style="margin-left:30px;" value="1" size="2" />
-										  <input type="submit" class="btn theme-btn" style="margin-left:40px;" value="Add To Cart" />
+										  <input type="submit" class="btn theme-btn" style="margin-left:40px;" value="Add ao Carrinho" />
 										</div>
 										</form>
                                     </div>
@@ -255,7 +255,7 @@ $item_total += ($item["price"]*$item["quantity"]);
                   <div class="bottom-footer">
                      <div class="row">
                            <div class="col-xs-12 col-sm-3 payment-options color-gray">
-                              <h5>Payment Options</h5>
+                              <h5>Métodos de pagamento</h5>
                               <ul>
                                  <li>
                                        <a href="#"> <img src="images/paypal.png" alt="Paypal"> </a>
